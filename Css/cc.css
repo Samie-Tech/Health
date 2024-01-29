@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: rgb(247, 247, 229);
+    padding: 20px;
+}
+.banner {
+    width: 100%;
+    height: 20vh;
+}
+.navbar {
+    width: 100%;
+    margin: -30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(250, 250, 234);
+}
+.logo {
+    width: 120px;
+    cursor: pointer;
+    font-weight: bolder;
+    color: #4d4bcf;
+    padding-left: 5rem;
+}
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+}
+.navbar ul li .active{
+   color: blue;
+}
+.content {
+    width: 100%;
+    text-align: center;
+    color: black;
+}
+.content h1 {
+    font-size: 30px;
+    margin-top: 50px;
+    text-transform: capitalize;
+    text-shadow: 1px 1px black;
+}
+.content p {
+   margin: 20px auto 20px auto;
+   font-weight: 100;
+   line-height: 25px;
+}
+button {
+    width: 150px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid grey;
+    background: transparent;
+    color: black;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+}
+ span {
+     background: blue;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+.btn:hover span {
+    width: 100%;
+}
+.btn:hover {
+    border: none;
+}
+
+.hero {
+    height:80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image-section {
+    display: flex;
+    margin-top: -120px;
+    justify-content: space-between;
+    height: 200px;
+}
+.image-section img {
+    height: 400px;
+    width: 480px;
+    border-radius: 20px;
+}
+.healthcare {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(2, 2, 43);
+    color: white;
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    text-align: center;
+}
+.container {
+    display: flex;
+    margin-top: 300px;
+}
+.complex {
+    width: 100rem;
+    padding-left: 5rem;
+    color: blue;
+    font-size: 15px;
+}
+.service {
+    margin: auto 15rem;
+}
+.service ul {
+    display: grid;
+    grid-template-columns: auto auto;
+   text-transform: capitalize;
+   list-style: circle;
+}
+.footer{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 3rem;
+   margin: 5rem;
+}
+.compliance {
+    background-color: white;
+}
+.compliance img {
+    height: 20px;
+}
+.compliance h1 {
+    text-transform: capitalize;
+}
+.efficiency {
+    background-color: white;
+}
+.efficiency img {
+    height: 30px;
+}
+.efficiency h1 {
+    text-transform: capitalize;
+}
